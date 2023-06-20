@@ -38,7 +38,7 @@ services:
       - CADDY_INGRESS_NETWORKS=get5
 
   g5api:
-    image: ghcr.io/phlexplexico/g5api:latest
+    image: ghcr.io/xe1os/g5api:latest
     depends_on:
       - get5db
     container_name: G5API
@@ -74,10 +74,10 @@ services:
     restart: always
 
   g5v:
-    image: ghcr.io/phlexplexico/g5v:latest
+    image: ghcr.io/xe1os/g5v:latest
     depends_on:
       - g5api
-    container_name: G5V-Front-End
+    container_name: G5V
     networks:
       - get5
     restart: always
