@@ -74,7 +74,7 @@ services:
     restart: always
 
   g5v:
-    image: ghcr.io/xe1os/g5v:latest
+    image: ghcr.io/xe1os/g5v:0.13
     depends_on:
       - g5api
     container_name: G5V
