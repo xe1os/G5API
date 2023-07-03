@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - master
+      - 0.13
 jobs:
   push:
     name: "Create build and push to GHCR"
