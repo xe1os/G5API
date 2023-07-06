@@ -89,7 +89,7 @@ async function returnStrategy(identifier, profile, done) {
         defaultMaps.push(['de_mirage', 'Mirage', curUser[0].id]);
         defaultMaps.push(['de_nuke', 'Nuke', curUser[0].id]);
         defaultMaps.push(['de_overpass', 'Overpass', curUser[0].id]);
-        defaultMaps.push(['de_dust2', 'Dust II', curUser[0].id]);
+        defaultMaps.push(['de_anubis', 'Anubis', curUser[0].id]);
         defaultMaps.push(['de_vertigo', 'Vertigo', curUser[0].id]);
         sql = "INSERT INTO map_list (map_name, map_display_name, user_id) VALUES ?";
         await db.query(sql, [defaultMaps]);
@@ -113,7 +113,7 @@ async function returnStrategy(identifier, profile, done) {
           defaultMaps.push(['de_mirage', 'Mirage', curUser[0].id]);
           defaultMaps.push(['de_nuke', 'Nuke', curUser[0].id]);
           defaultMaps.push(['de_overpass', 'Overpass', curUser[0].id]);
-          defaultMaps.push(['de_dust2', 'Dust II', curUser[0].id]);
+          defaultMaps.push(['de_anubis', 'Anubis', curUser[0].id]);
           defaultMaps.push(['de_vertigo', 'Vertigo', curUser[0].id]);
           sql = "INSERT INTO map_list (map_name, map_display_name, user_id) VALUES ?";
           await db.query(sql, [defaultMaps]);
@@ -229,7 +229,7 @@ passport.use('local-register',
         defaultMaps.push(['de_mirage', 'Mirage', curUser[0].id]);
         defaultMaps.push(['de_nuke', 'Nuke', curUser[0].id]);
         defaultMaps.push(['de_overpass', 'Overpass', curUser[0].id]);
-        defaultMaps.push(['de_dust2', 'Dust II', curUser[0].id]);
+        defaultMaps.push(['de_anubis', 'Anubis', curUser[0].id]);
         defaultMaps.push(['de_vertigo', 'Vertigo', curUser[0].id]);
         sql = "INSERT INTO map_list (map_name, map_display_name, user_id) VALUES ?";
         await db.query(sql, [defaultMaps]);
