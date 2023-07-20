@@ -20,7 +20,7 @@ describe("Test the matches routes", () => {
         team2_id: 3,
         max_maps: 1,
         title: "Map {MAPNUMBER} of {MAXMAPS}",
-        veto_mappool: "de_dust2, de_cache, de_mirage",
+        veto_mappool: "de_anubis, de_inferno, de_mirage",
         skip_veto: 0,
         ignore_server: true
       }
