@@ -34,7 +34,7 @@ describe("Test the mapstats routes", () => {
     let teamData = [{
       match_id: 3,
       map_number: 1,
-      map_name: 'de_dust2',
+      map_name: 'de_anubis',
       start_time: new Date().toISOString().slice(0, 19).replace("T", " ")
     }];
     return request
