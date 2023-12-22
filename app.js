@@ -78,7 +78,7 @@ if (config.get("server.useRedis")) {
       resave: false,
       saveUninitialized: true,
       store: new redisStore(redisCfg),
-      cookie: { maxAge: 86400000 },
+      cookie: { maxAge: 2628000000 },
     })
   );
 } else {
@@ -88,7 +88,7 @@ if (config.get("server.useRedis")) {
       name: "G5API",
       resave: false,
       saveUninitialized: true,
-      cookie: { maxAge: 86400000 },
+      cookie: { maxAge: 2628000000 },
     })
   );
 }
