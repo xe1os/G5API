@@ -115,7 +115,7 @@ router.post("/", async (req: Request, res: Response) => {
         message: "Invalid API key has been given."
       });
     }
-    // Begin file compression into public/demos and check time variance of 8 minutes.
+    // Begin file compression into public/demos and check time variance of 30 minutes.
     let zip: JSZip = new JSZip();
     let sqlString: string =
       "SELECT id, end_time FROM map_stats WHERE match_id = ? AND map_number = ?";
@@ -133,7 +133,7 @@ router.post("/", async (req: Request, res: Response) => {
     );
     let minuteDifference = Math.floor(timeDifference / 1000 / 60);
     let updateStmt: object;
-    if (minuteDifference > 8) {
+    if (minuteDifference > 30) {
       return res.status(401).json({ message: "Demo can no longer be uploaded." });
     }
 
