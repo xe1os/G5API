@@ -1,4 +1,4 @@
-name: Publish to GHCR
+name: publish to ghcr
 on:
   workflow_dispatch:
   push:
@@ -6,7 +6,7 @@ on:
       - lotgaming
 jobs:
   push:
-    name: Create build and push to GHCR
+    name: "Create build and push to GHCR"
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
@@ -30,10 +30,7 @@ jobs:
           registry: ghcr.io
           username: ${{ github.repository_owner }}
           password: ${{ secrets.GITHUB_TOKEN }}
-      - id: getversion
-        uses: Saionaro/extract-package-version@v1.2.1
       - uses: docker/build-push-action@v3.2.0
-        if: github.ref == 'refs/heads/master'
         with:
           context: .
           file: Dockerfile
